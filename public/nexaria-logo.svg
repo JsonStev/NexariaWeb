@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nx-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#4facfe" />
+      <stop offset="100%" stopColor="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="nx-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1e3a8a" />
+      <stop offset="100%" stopColor="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <path d="M20 30 L45 15 L80 60 L55 75 Z" fill="url(#nx-grad-1)" />
+  <path d="M20 55 L45 40 L45 80 L20 95 Z" fill="url(#nx-grad-2)" />
+  <path d="M55 15 L80 0 L80 40 L55 55 Z" fill="url(#nx-grad-2)" />
+  <circle cx="85" cy="15" r="8" fill="#4facfe" />
+</svg>

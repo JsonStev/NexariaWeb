@@ -1,0 +1,21 @@
+#Dependencias
+node_modules/
+build/
+dist/
+dist-ssr/
+coverage/
+*.local
+
+#Logs
+logs
+*.log
+npm-debug.log*
+
+#Variables
+.env
+!.env.example
+.env.production
+
+#Archivos de Sistema
+.vscode/
+.idea/
