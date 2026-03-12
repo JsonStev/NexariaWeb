@@ -39,7 +39,7 @@ export default function InfrastructureSimulator() {
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative overflow-hidden">
 
                     {/* Badge de éxito */}
-                    <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#0A0B10] border border-cyan-500 px-5 py-3 rounded-full flex items-center gap-2 shadow-[0_0_40px_rgba(0,210,255,0.4)] transition-all duration-500 whitespace-nowrap ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}>
+                    <div className={`absolute top-[30%] lg:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#0A0B10] border border-cyan-500 px-5 py-3 rounded-full flex items-center gap-2 shadow-[0_0_40px_rgba(0,210,255,0.4)] transition-all duration-500 whitespace-nowrap ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}>
                         <Zap className="w-5 h-5 text-brand-accent-start" />
                         <span className="font-bold tracking-wide text-white text-sm">⚡ Acción Exitosa</span>
                     </div>
@@ -139,8 +139,8 @@ export default function InfrastructureSimulator() {
                                     <div className="absolute w-full h-px bg-white/5 top-2/3" />
 
                                     {/* Event */}
-                                    <div className={`absolute top-[25%] left-0 right-4 h-[25%] bg-cyan-500/20 border border-cyan-400 border-l-4 border-l-cyan-400 rounded p-2 transition-transform duration-500 ease-out origin-center ${step >= 3 ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>
-                                        <p className="text-xs font-bold text-white mb-0.5">Cita Agendada: Juan Pérez</p>
+                                    <div className={`absolute top-[20%] left-0 right-2 h-[40%] bg-cyan-500/20 border border-cyan-400 border-l-4 border-l-cyan-400 rounded p-2 overflow-hidden transition-transform duration-500 ease-out origin-center ${step >= 3 ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>
+                                        <p className="text-[10px] font-bold text-white mb-1 truncate">Cita Agendada: Juan Pérez</p>
                                         <p className="text-[10px] text-cyan-200">10:00 AM - 11:00 AM</p>
                                     </div>
                                 </div>
