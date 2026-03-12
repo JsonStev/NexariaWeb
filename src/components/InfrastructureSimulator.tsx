@@ -181,7 +181,7 @@ export default function InfrastructureSimulator() {
                                             <td className="px-3 py-3 text-cyan-400 font-medium font-mono">#003</td>
                                             <td className="px-3 py-3 text-white font-medium">Juan Pérez</td>
                                             <td className="px-3 py-3 text-white">Martes, 10:00 AM</td>
-                                            <td className="hidden sm:table-cell px-3 py-3 text-white">Agendamiento Nuevo</td>
+                                            <td className="hidden sm:table-cell px-3 py-3 text-white">Seguimiento</td>
                                         </tr>
                                     </tbody>
                                 </table>
