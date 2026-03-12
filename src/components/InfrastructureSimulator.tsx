@@ -36,12 +36,12 @@ export default function InfrastructureSimulator() {
                     </p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center relative">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative">
 
                     {/* Badge de éxito */}
-                    <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#0A0B10] border border-cyan-500  px-8 py-4 rounded-full flex items-center gap-3 shadow-[0_0_40px_rgba(0,210,255,0.4)] transition-all duration-500 ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}>
-                        <Zap className="w-6 h-6 text-brand-accent-start" />
-                        <span className="font-bold tracking-wide text-white">⚡ Acción Exitosa</span>
+                    <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#0A0B10] border border-cyan-500 px-5 py-3 rounded-full flex items-center gap-2 shadow-[0_0_40px_rgba(0,210,255,0.4)] transition-all duration-500 whitespace-nowrap ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}>
+                        <Zap className="w-5 h-5 text-brand-accent-start" />
+                        <span className="font-bold tracking-wide text-white text-sm">⚡ Acción Exitosa</span>
                     </div>
 
                     {/* Left Column: WhatsApp */}
@@ -117,7 +117,7 @@ export default function InfrastructureSimulator() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="flex flex-col gap-6 h-[600px]"
+                        className="flex flex-col gap-6 h-auto lg:h-[600px]"
                     >
 
                         {/* Google Calendar Mockup */}
@@ -153,35 +153,35 @@ export default function InfrastructureSimulator() {
                                 <Table className="w-4 h-4 text-emerald-400" />
                                 <span className="text-sm font-medium">Reporte de Actividad</span>
                             </div>
-                            <div className="flex-1 overflow-auto min-h-0 bg-black/20 text-sm">
+                            <div className="flex-1 overflow-x-auto overflow-y-auto min-h-0 bg-black/20 text-sm">
                                 <table className="w-full text-left">
                                     <thead className="text-[11px] text-brand-secondary uppercase tracking-wider bg-white/5 sticky top-0 z-10">
                                         <tr>
-                                            <th className="px-5 py-3 font-medium">ID</th>
-                                            <th className="px-5 py-3 font-medium">Nombre</th>
-                                            <th className="px-5 py-3 font-medium">Fecha</th>
-                                            <th className="px-5 py-3 font-medium">Servicio</th>
+                                            <th className="px-3 py-3 font-medium">ID</th>
+                                            <th className="px-3 py-3 font-medium">Nombre</th>
+                                            <th className="px-3 py-3 font-medium">Fecha</th>
+                                            <th className="px-3 py-3 font-medium">Servicio</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/5 whitespace-nowrap">
                                         <tr className="text-brand-secondary/70">
-                                            <td className="px-5 py-3">#001</td>
-                                            <td className="px-5 py-3">Ana Martínez</td>
-                                            <td className="px-5 py-3">Lunes, 09:00 AM</td>
-                                            <td className="px-5 py-3">Consulta Inicial</td>
+                                            <td className="px-3 py-3">#001</td>
+                                            <td className="px-3 py-3">Ana Martínez</td>
+                                            <td className="px-3 py-3">Lunes, 09:00 AM</td>
+                                            <td className="px-3 py-3">Consulta Inicial</td>
                                         </tr>
                                         <tr className="text-brand-secondary/70">
-                                            <td className="px-5 py-3">#002</td>
-                                            <td className="px-5 py-3">Carlos Ruiz</td>
-                                            <td className="px-5 py-3">Lunes, 11:30 AM</td>
-                                            <td className="px-5 py-3">Revisión</td>
+                                            <td className="px-3 py-3">#002</td>
+                                            <td className="px-3 py-3">Carlos Ruiz</td>
+                                            <td className="px-3 py-3">Lunes, 11:30 AM</td>
+                                            <td className="px-3 py-3">Revisión</td>
                                         </tr>
                                         {/* Animated New Row */}
                                         <tr className={`transition-all duration-700 bg-cyan-500/10 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}>
-                                            <td className="px-5 py-3 text-cyan-400 font-medium font-mono">#003</td>
-                                            <td className="px-5 py-3 text-white font-medium">Juan Pérez</td>
-                                            <td className="px-5 py-3 text-white">Martes, 10:00 AM</td>
-                                            <td className="px-5 py-3 text-white">Agendamiento Nuevo</td>
+                                            <td className="px-3 py-3 text-cyan-400 font-medium font-mono">#003</td>
+                                            <td className="px-3 py-3 text-white font-medium">Juan Pérez</td>
+                                            <td className="px-3 py-3 text-white">Martes, 10:00 AM</td>
+                                            <td className="px-3 py-3 text-white">Agendamiento Nuevo</td>
                                         </tr>
                                     </tbody>
                                 </table>
