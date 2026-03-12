@@ -36,7 +36,7 @@ export default function InfrastructureSimulator() {
                     </p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative overflow-hidden">
 
                     {/* Badge de éxito */}
                     <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#0A0B10] border border-cyan-500 px-5 py-3 rounded-full flex items-center gap-2 shadow-[0_0_40px_rgba(0,210,255,0.4)] transition-all duration-500 whitespace-nowrap ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'}`}>
@@ -50,7 +50,7 @@ export default function InfrastructureSimulator() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="glass rounded-3xl border-white/10 overflow-hidden flex flex-col h-[600px] shadow-2xl relative"
+                        className="glass rounded-3xl border-white/10 overflow-hidden flex flex-col h-[520px] sm:h-[600px] shadow-2xl relative min-w-0 w-full"
                     >
                         {/* WA Header */}
                         <div className="bg-[#1F2C34] px-4 py-3 flex items-center gap-3 border-b border-white/5">
@@ -117,7 +117,7 @@ export default function InfrastructureSimulator() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="flex flex-col gap-6 h-auto lg:h-[600px]"
+                        className="flex flex-col gap-6 h-auto lg:h-[600px] min-w-0 w-full"
                     >
 
                         {/* Google Calendar Mockup */}
@@ -160,7 +160,7 @@ export default function InfrastructureSimulator() {
                                             <th className="px-3 py-3 font-medium">ID</th>
                                             <th className="px-3 py-3 font-medium">Nombre</th>
                                             <th className="px-3 py-3 font-medium">Fecha</th>
-                                            <th className="px-3 py-3 font-medium">Servicio</th>
+                                            <th className="hidden sm:table-cell px-3 py-3 font-medium">Servicio</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/5 whitespace-nowrap">
@@ -168,20 +168,20 @@ export default function InfrastructureSimulator() {
                                             <td className="px-3 py-3">#001</td>
                                             <td className="px-3 py-3">Ana Martínez</td>
                                             <td className="px-3 py-3">Lunes, 09:00 AM</td>
-                                            <td className="px-3 py-3">Consulta Inicial</td>
+                                            <td className="hidden sm:table-cell px-3 py-3">Consulta Inicial</td>
                                         </tr>
                                         <tr className="text-brand-secondary/70">
                                             <td className="px-3 py-3">#002</td>
                                             <td className="px-3 py-3">Carlos Ruiz</td>
                                             <td className="px-3 py-3">Lunes, 11:30 AM</td>
-                                            <td className="px-3 py-3">Revisión</td>
+                                            <td className="hidden sm:table-cell px-3 py-3">Revisión</td>
                                         </tr>
                                         {/* Animated New Row */}
                                         <tr className={`transition-all duration-700 bg-cyan-500/10 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}>
                                             <td className="px-3 py-3 text-cyan-400 font-medium font-mono">#003</td>
                                             <td className="px-3 py-3 text-white font-medium">Juan Pérez</td>
                                             <td className="px-3 py-3 text-white">Martes, 10:00 AM</td>
-                                            <td className="px-3 py-3 text-white">Agendamiento Nuevo</td>
+                                            <td className="hidden sm:table-cell px-3 py-3 text-white">Agendamiento Nuevo</td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -38,7 +38,7 @@ export default function HowItWorks() {
     ];
 
     return (
-        <section id="como-funciona" className="py-32 px-6 bg-brand-bg relative overflow-hidden">
+        <section id="como-funciona" className="py-32 px-3 sm:px-6 bg-brand-bg relative overflow-hidden">
             {/* Background radial effects */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] glow-radial opacity-30 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] glow-radial opacity-30 pointer-events-none" />
