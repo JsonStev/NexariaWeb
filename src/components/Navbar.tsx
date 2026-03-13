@@ -54,7 +54,9 @@ export default function Navbar() {
               <a href="#soluciones" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Soluciones</a>
               <a href="#como-funciona" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Cómo Funciona</a>
               <a href="#casos-de-uso" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Casos de Uso</a>
-              <button className="btn-primary mt-4">Agendar Demo</button>
+              <a href="https://wa.me/50588684946?text=%C2%A1Hola%20Nexaria%20Labs!%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20agendar%20una%20demo%20estrat%C3%A9gica%20para%20automatizar%20procesos%20en%20mi%20negocio.%20%C2%BFPodemos%20hablar?" target='_blank'>
+                <button className="btn-primary text-sm py-2.5 px-6 mt-4">Agendar Demo</button>
+              </a>
             </div>
           </motion.div>
         )}
