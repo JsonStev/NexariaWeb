@@ -139,9 +139,8 @@ export default function InfrastructureSimulator() {
                                     <div className="absolute w-full h-px bg-white/5 top-2/3" />
 
                                     {/* Event */}
-                                    <div className={`absolute top-1/3 left-0 right-2 h-1/3 bg-cyan-500/20 border border-cyan-400 border-l-4 border-l-cyan-400 rounded p-2 overflow-hidden transition-transform duration-500 ease-out origin-center ${step >= 3 ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>
-                                        <p className="text-[10px] font-bold text-white mb-1 truncate">Cita Agendada: Juan Pérez</p>
-                                        <p className="text-[10px] text-cyan-200">10:00 AM - 11:00 AM</p>
+                                    <div className={`absolute top-1/3 left-0 right-2 h-1/3 bg-cyan-500/20 border border-cyan-400 border-l-4 border-l-cyan-400 rounded p-2 transition-transform duration-500 ease-out origin-center flex items-center justify-center text-center ${step >= 3 ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>
+                                        <p className="text-[10px] font-bold text-white truncate">Cita Agendada: Juan Pérez</p>
                                     </div>
                                 </div>
                             </div>
