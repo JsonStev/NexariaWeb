@@ -49,7 +49,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-40 bg-brand-bg/95 backdrop-blur-xl pt-28 px-6 md:hidden"
           >
-            <div className="flex flex-col gap-6 text-center items-center">
+            <div className="flex flex-col gap-6 text-center">
               <a href="#inicio" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Inicio</a>
               <a href="#soluciones" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Soluciones</a>
               <a href="#como-funciona" onClick={() => setIsMenuOpen(false)} className="text-2xl font-display font-semibold">Cómo Funciona</a>
