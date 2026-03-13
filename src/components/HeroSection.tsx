@@ -46,7 +46,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="https://wa.me/50588684946?text=%C2%A1Hola%20Nexaria%20Labs!%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20agendar%20una%20demo%20estrat%C3%A9gica%20para%20automatizar%20procesos%20en%20mi%20negocio.%20%C2%BFPodemos%20hablar?">
+          <a href="https://wa.me/50588684946?text=%C2%A1Hola%20Nexaria%20Labs!%20%F0%9F%9A%80%20Vengo%20de%20la%20web%20y%20me%20interesa%20agendar%20una%20demo%20estrat%C3%A9gica%20para%20automatizar%20procesos%20en%20mi%20negocio.%20%C2%BFPodemos%20hablar?" target='_blank'>
             <button className="btn-primary w-full sm:w-auto">
               Ver Agente en Acción
               <ChevronRight className="w-5 h-5" />
